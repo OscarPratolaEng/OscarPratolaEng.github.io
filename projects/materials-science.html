@@ -14,7 +14,7 @@
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="../index.html">Oscar Pratola</a>
+    <a class="brand" href="../index.html"><img class="brand-avatar" src="../images/profile.PNG" alt="">Oscar Pratola</a>
     <nav class="primary-nav" aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="../publications.html">Publications</a>
@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<main>
+<main class="with-toc">
   <a class="back-link" href="../projects.html">← Back to Projects</a>
 
   <div class="page-header">
@@ -36,8 +36,18 @@
 
   <hr class="rule">
 
+  <div class="project-layout">
+    <nav class="project-toc" aria-label="Projects on this page">
+      <div class="project-toc-title">On this page</div>
+      <a href="#vega-bracket">Vega Payload Adapter Bracket</a>
+      <a href="#pekk-bracket">PEKK Bracket</a>
+      <a href="#rotor-mast">Helicopter Rotor Mast</a>
+    </nav>
+
+    <div class="project-content">
+
   <!-- ===================== VEGA BRACKET ===================== -->
-  <div class="project-section">
+  <div class="project-section" id="vega-bracket">
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Supervised by Dr. T. Ghidini (ESA Head of Materials &amp; Processes)</span>
       <h2>Topology Optimization of a Vega Payload Adapter Bracket</h2>
@@ -91,7 +101,7 @@
   <hr class="entry-divider">
 
   <!-- ===================== PEKK BRACKET ===================== -->
-  <div class="project-section">
+  <div class="project-section" id="pekk-bracket">
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Supervised by Prof. P. Bettini</span>
       <h2>Topology Optimization of an Aerospace Bracket in PEKK Antero 800NA</h2>
@@ -153,7 +163,7 @@
   <hr class="entry-divider">
 
   <!-- ===================== ROTOR MAST ===================== -->
-  <div class="project-section">
+  <div class="project-section" id="rotor-mast">
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Machine Design Assignment · Supervised by Prof. M. Giglio</span>
       <h2>Static and Fatigue Analysis of a Helicopter Rotor Mast</h2>
@@ -191,6 +201,9 @@
         <div class="frame"><img src="../images/projects/rotor-mast/strain-gauge-rosette.jpg" alt="Schematic of a three-element strain gauge rosette configuration"></div>
         <figcaption>Strain gauge rosette configuration.</figcaption>
       </figure>
+    </div>
+  </div>
+
     </div>
   </div>
 </main>

@@ -14,7 +14,7 @@
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="../index.html">Oscar Pratola</a>
+    <a class="brand" href="../index.html"><img class="brand-avatar" src="../images/profile.PNG" alt="">Oscar Pratola</a>
     <nav class="primary-nav" aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="../publications.html">Publications</a>
@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<main>
+<main class="with-toc">
   <a class="back-link" href="../projects.html">← Back to Projects</a>
 
   <div class="page-header">
@@ -36,8 +36,18 @@
 
   <hr class="rule">
 
+  <div class="project-layout">
+    <nav class="project-toc" aria-label="Projects on this page">
+      <div class="project-toc-title">On this page</div>
+      <a href="#semi-cryo">Semi-Cryogenic Liquid Rocket Engine</a>
+      <a href="#a10">A-10 Thunderbolt II Propulsion</a>
+      <a href="#icbm">Intercontinental Vehicle</a>
+    </nav>
+
+    <div class="project-content">
+
   <!-- ===================== SEMI-CRYOGENIC ENGINE ===================== -->
-  <div class="project-section">
+  <div class="project-section" id="semi-cryo">
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Space Propulsion · "The Fellowship Of The O-Ring"</span>
       <h2>Preliminary Design of a Bipropellant Semi-Cryogenic Blowdown Liquid Rocket Engine</h2>
@@ -84,7 +94,7 @@
   <hr class="entry-divider">
 
   <!-- ===================== A-10 THUNDERBOLT ===================== -->
-  <div class="project-section">
+  <div class="project-section" id="a10">
     <div class="project-section-header">
       <span class="tag">B.Sc. Thesis · Supervised by Prof. C. Paravan</span>
       <h2>A-10 Thunderbolt II Propulsion Analysis</h2>
@@ -131,7 +141,7 @@
   <hr class="entry-divider">
 
   <!-- ===================== ICBM / INTERCONTINENTAL VEHICLE ===================== -->
-  <div class="project-section">
+  <div class="project-section" id="icbm">
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Supervised by Prof. F. Maggi · Team of ~10, 6-month project</span>
       <h2>Preliminary Design of an Intercontinental Civil Vehicle for Rapid Payload Delivery</h2>
@@ -204,6 +214,9 @@
       <div class="frame"><img src="../images/projects/icbm/dynamic-pressure-profile.jpg" alt="Graph of dynamic pressure versus altitude during the powered flight phase"></div>
       <figcaption>Dynamic pressure vs. altitude during the powered phase, with first-stage burnout marked.</figcaption>
     </figure>
+  </div>
+
+    </div>
   </div>
 </main>
 
