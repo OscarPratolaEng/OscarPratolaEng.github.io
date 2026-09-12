@@ -391,11 +391,20 @@ footer {
 }
 
 .project-section {
-  margin-bottom: 64px;
+  margin-bottom: 80px;
 }
 
 .project-section:last-child {
   margin-bottom: 0;
+}
+
+.project-section + hr.entry-divider,
+hr.entry-divider + .project-section {
+  margin-top: 8px;
+}
+
+.project-section + hr.entry-divider {
+  margin-bottom: 48px;
 }
 
 .project-section-header {
@@ -416,37 +425,70 @@ footer {
   margin: 14px 0;
 }
 
-.image-gallery {
+/* A single figure, placed inline right where the text refers to it.
+   Fixed frame height with object-fit:contain keeps every image the same
+   visual size regardless of its native aspect ratio. */
+.figure-inline {
+  margin: 24px auto;
+  max-width: 440px;
+}
+
+.figure-inline.wide {
+  max-width: 600px;
+}
+
+.figure-inline .frame {
+  height: 260px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.figure-inline.wide .frame {
+  height: 300px;
+}
+
+.figure-inline img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.figure-inline figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--steel);
+  text-align: center;
+}
+
+/* Two figures shown side by side for a direct comparison (before/after,
+   two related plots). Each keeps the same fixed-height frame as above. */
+.figure-pair {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin: 24px 0;
 }
 
-.image-gallery.single-column {
-  grid-template-columns: 1fr;
-  max-width: 480px;
-}
-
-.image-gallery figure {
+.figure-pair .figure-inline {
+  max-width: none;
   margin: 0;
 }
 
-.image-gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid var(--rule);
-  background: #fff;
+@media (max-width: 560px) {
+  .figure-pair {
+    grid-template-columns: 1fr;
+  }
 }
 
-.image-gallery figcaption {
-  margin-top: 8px;
-  font-size: 0.85rem;
-  color: var(--steel);
-}
-
-.image-gallery figcaption .source-note {
+.figure-inline figcaption .source-note,
+.figure-pair figcaption .source-note {
   display: block;
   font-style: italic;
   margin-top: 2px;
@@ -483,4 +525,19 @@ footer {
   font-size: 0.88rem;
   color: var(--steel);
   margin-top: -8px;
+}
+
+.project-download {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  border: 1px solid var(--rule-strong);
+  font-size: 0.85rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.project-download:hover {
+  border-color: var(--accent);
+  color: var(--accent-deep);
 }
