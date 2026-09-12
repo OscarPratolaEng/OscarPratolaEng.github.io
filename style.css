@@ -610,10 +610,22 @@ main.with-toc {
   gap: 4px;
 }
 
+.project-toc .toc-back {
+  display: block;
+  padding: 6px 0 14px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.88rem;
+  color: var(--steel);
+  text-decoration: none;
+}
+
+.project-toc .toc-back:hover {
+  color: var(--accent-deep);
+}
+
 .project-toc a {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  display: block;
   padding: 6px 0;
   font-size: 0.92rem;
   line-height: 1.35;
@@ -622,18 +634,6 @@ main.with-toc {
 }
 
 .project-toc a:hover {
-  color: var(--accent-deep);
-}
-
-.project-toc .toc-icon {
-  width: 14px;
-  height: 14px;
-  margin-top: 2px;
-  flex-shrink: 0;
-  color: var(--steel);
-}
-
-.project-toc a:hover .toc-icon {
   color: var(--accent-deep);
 }
 
