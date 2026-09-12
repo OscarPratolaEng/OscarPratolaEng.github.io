@@ -41,44 +41,44 @@
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Supervised by Dr. T. Ghidini (ESA Head of Materials &amp; Processes)</span>
       <h2>Topology Optimization of a Vega Payload Adapter Bracket</h2>
+      <a class="project-download" href="../Documents/ProjectsReport/AM_Optimization_of_the_support_bracket_for_the_payload_adapter_of_Vega_launcher_Additive_Manufacturing.pdf" target="_blank" rel="noopener">Download report (PDF)</a>
     </div>
 
     <p>An ECSS-compliant structural redesign of a support bracket for the Vega launcher's
       payload adapter, targeting a lightweight, additively manufacturable component while
       meeting stiffness, frequency, and safety-factor requirements under a 15 g static
-      launch load and cross-axis vibration environment.</p>
+      launch load and cross-axis vibration environment. The starting point was the original
+      bracket, which interfaces with the electrical connector and the ACU support points on
+      the upper stage adapter shown below.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/vega-bracket/component-overview.jpg" alt="Overview of the original bracket component with electrical connector and ACU support interfaces labeled">
-        <figcaption>Overview of the original support bracket, showing the electrical connector and ACU support interfaces.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/vega-bracket/upper-stage-adapter.jpg" alt="CAD sketch of the Vega launcher upper stage adapter">
-        <figcaption>The Vega upper stage adapter assembly the bracket integrates into.</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/vega-bracket/component-overview.jpg" alt="Overview of the original bracket component with electrical connector and ACU support interfaces labeled"></div>
+      <figcaption>Original support bracket, showing the electrical connector and ACU support interfaces.</figcaption>
+    </figure>
 
     <p>The optimization process moved through several iterations of mass and stiffness
       maximization, followed by a design-for-additive-manufacturing phase evaluating
       support structures (h-cell, rod, and tree configurations) and print orientation. The
       rod-support configuration was selected for its lower mass and better deformation
-      performance.</p>
+      performance. A compensated geometry approach was then used to counteract
+      print-induced springback: the part is deliberately printed in a bent shape so that,
+      once the supports are removed, the elastic recovery brings it back to the intended
+      final geometry.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/vega-bracket/residual-displacement.jpg" alt="Displacement map on the printed geometry showing residual stresses after printing">
-        <figcaption>Residual displacement field on the printed geometry before support removal.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/vega-bracket/vonmises-after-springback.jpg" alt="Von Mises stress map after support removal and springback">
-        <figcaption>Von Mises stresses after support removal and springback, on the compensated geometry.</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/vega-bracket/residual-displacement.jpg" alt="Displacement map on the printed geometry showing residual stresses after printing"></div>
+      <figcaption>Residual displacement field on the printed geometry, before support removal.</figcaption>
+    </figure>
 
-    <p>A compensated geometry approach was used to counteract print-induced springback,
-      fully eliminating residual deformation while keeping peak stresses below the AlSi10Mg
-      yield threshold.</p>
+    <p>After support removal, the compensated geometry fully eliminates residual
+      deformation while keeping peak stresses below the AlSi10Mg yield threshold, with the
+      highest residual stresses concentrated at the connector, the region of the geometry
+      that must not deform.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/vega-bracket/vonmises-after-springback.jpg" alt="Von Mises stress map after support removal and springback"></div>
+      <figcaption>Von Mises stresses after support removal and springback, on the compensated geometry.</figcaption>
+    </figure>
 
     <table class="results-table">
       <tr><th>Metric</th><th>Original</th><th>Optimized</th></tr>
@@ -95,42 +95,53 @@
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Supervised by Prof. P. Bettini</span>
       <h2>Topology Optimization of an Aerospace Bracket in PEKK Antero 800NA</h2>
+      <a class="project-download" href="../Documents/ProjectsReport/Topology%20Optimization%20of%20a%20Support%20in%20PEKK%20Antero%20800NA%20Manufactured%20with%20Additive%20Manufacturing.pdf" target="_blank" rel="noopener">Download report (PDF)</a>
     </div>
 
     <p>Applying Design for Additive Manufacturing (DfAM) principles, this project
       minimized structural deformation of a lightweight bracket under a 150 N distributed
       load, 3D printed in PEKK Antero 800NA via FDM, and validated the simulation against
-      physical correlation testing.</p>
+      physical correlation testing. Topology optimization was chosen over shape
+      optimization as the more effective method for this component.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/pekk-bracket/optimization-method.jpg" alt="Conceptual comparison between topology optimization and shape optimization methods">
-        <figcaption>The optimization method: topology optimization was chosen over shape optimization for this component.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/pekk-bracket/factor-of-safety-map.jpg" alt="Factor of safety map on the final Omega-shaped bracket geometry">
-        <figcaption>Factor of safety distribution on the final Ω-shaped design (minimum FoS 1.4).</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline wide">
+      <div class="frame"><img src="../images/projects/pekk-bracket/optimization-method.jpg" alt="Conceptual comparison between topology optimization and shape optimization methods"></div>
+      <figcaption>The optimization method: topology optimization was chosen over shape optimization for this component.</figcaption>
+    </figure>
 
     <p>An Ω-shaped geometry, printed horizontally to align fibers with the applied load
       and reduce support material, was selected over a V-shaped alternative that proved
-      prone to excessive bending. Supports were removed post-print using a 22 g/L NaOH
-      solution.</p>
+      prone to excessive bending. The chosen design keeps a minimum factor of safety of 1.4
+      across the part.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/pekk-bracket/support-removal-sequence.jpg" alt="Sequence of printed PEKK parts from support removal to finished component">
-        <figcaption>Printed parts progressing from support removal to finished component.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/pekk-bracket/hydraulic-test-setup.jpg" alt="PEKK bracket mounted in a hydraulic wedge grip tensile testing machine">
-        <figcaption>Physical correlation test setup using hydraulic wedge grips.</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/pekk-bracket/factor-of-safety-map.jpg" alt="Factor of safety map on the final Omega-shaped bracket geometry"></div>
+      <figcaption>Factor of safety distribution on the final Ω-shaped design (minimum FoS 1.4).</figcaption>
+    </figure>
 
-    <img src="../images/projects/pekk-bracket/test-results-graph.jpg" alt="Graph of axial force versus vertical displacement from physical testing" style="max-width:480px; width:100%; border:1px solid var(--rule); display:block; margin: 24px 0;">
-    <p style="margin-top:8px; font-size:0.85rem; color:var(--steel);">Physical test results: yielding observed at approximately 150 N / 0.56 mm vertical displacement.</p>
+    <p>Supports were removed post-print using a 22 g/L NaOH solution, progressing each
+      printed part from its as-printed state to a finished, support-free component.</p>
+
+    <figure class="figure-inline wide">
+      <div class="frame"><img src="../images/projects/pekk-bracket/support-removal-sequence.jpg" alt="Sequence of printed PEKK parts from support removal to finished component"></div>
+      <figcaption>Printed parts progressing from support removal to finished component.</figcaption>
+    </figure>
+
+    <p>Simulation results were then validated against physical testing, using hydraulic
+      wedge grips to apply a controlled axial load to the printed part.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/pekk-bracket/hydraulic-test-setup.jpg" alt="PEKK bracket mounted in a hydraulic wedge grip tensile testing machine"></div>
+      <figcaption>Physical correlation test setup using hydraulic wedge grips.</figcaption>
+    </figure>
+
+    <p>The physical test confirmed the simulation: yielding was observed at approximately
+      150 N and 0.56 mm of vertical displacement, closely matching the predicted behavior.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/pekk-bracket/test-results-graph.jpg" alt="Graph of axial force versus vertical displacement from physical testing"></div>
+      <figcaption>Physical test results: axial force vs. vertical displacement.</figcaption>
+    </figure>
 
     <table class="results-table">
       <tr><th>Model</th><th>Weight</th><th>Displacement</th><th>Printing time</th></tr>
@@ -146,6 +157,7 @@
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Machine Design Assignment · Supervised by Prof. M. Giglio</span>
       <h2>Static and Fatigue Analysis of a Helicopter Rotor Mast</h2>
+      <a class="project-download" href="../Documents/ProjectsReport/Analysis%20of%20Helicopter%20Rotor%20Mast%20-%20Machine%20Design%20Assignment.pdf" target="_blank" rel="noopener">Download report (PDF)</a>
     </div>
 
     <p>A complete analytical and numerical structural assessment of a helicopter main
@@ -153,29 +165,31 @@
       element analysis (Abaqus, hexahedral mesh) to locate critical notch sections, and
       validating the results against experimental strain gauge data.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/rotor-mast/fem-mesh-critical-section.jpg" alt="Finite element mesh of the rotor mast with the critical section highlighted">
-        <figcaption>FEM mesh of the rotor mast, with the most critical section identified.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/rotor-mast/fatigue-load-profile.jpg" alt="Graph of cyclic axial and torque loading over time used for fatigue evaluation">
-        <figcaption>Cyclic axial and torque load profile used for the fatigue assessment.</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline wide">
+      <div class="frame"><img src="../images/projects/rotor-mast/fem-mesh-critical-section.jpg" alt="Finite element mesh of the rotor mast with the critical section highlighted"></div>
+      <figcaption>FEM mesh of the rotor mast, with the most critical section identified.</figcaption>
+    </figure>
 
-    <p>Experimental validation was performed using a strain gauge rosette on a hydraulic
-      axial/torsional test machine, cross-checking the analytical and FEM predictions
-      against measured strains at the critical section.</p>
+    <p>The fatigue assessment used a cyclic axial and torque load profile representative
+      of in-service operation, feeding both the analytical model and the FEM simulation.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/rotor-mast/hydraulic-test-machine.jpg" alt="Hydraulic axial and torsional test machine used for experimental validation">
-        <figcaption>Hydraulic axial/torsional test machine used for experimental validation.</figcaption>
+    <figure class="figure-inline wide">
+      <div class="frame"><img src="../images/projects/rotor-mast/fatigue-load-profile.jpg" alt="Graph of cyclic axial and torque loading over time used for fatigue evaluation"></div>
+      <figcaption>Cyclic axial and torque load profile used for the fatigue assessment.</figcaption>
+    </figure>
+
+    <p>Experimental validation was performed using a strain gauge rosette mounted on a
+      hydraulic axial/torsional test machine, cross-checking the analytical and FEM
+      predictions against measured strains at the critical section.</p>
+
+    <div class="figure-pair">
+      <figure class="figure-inline">
+        <div class="frame"><img src="../images/projects/rotor-mast/hydraulic-test-machine.jpg" alt="Hydraulic axial and torsional test machine used for experimental validation"></div>
+        <figcaption>Hydraulic axial/torsional test machine.</figcaption>
       </figure>
-      <figure>
-        <img src="../images/projects/rotor-mast/strain-gauge-rosette.jpg" alt="Schematic of a three-element strain gauge rosette configuration">
-        <figcaption>Strain gauge rosette configuration used in the experimental set-up.</figcaption>
+      <figure class="figure-inline">
+        <div class="frame"><img src="../images/projects/rotor-mast/strain-gauge-rosette.jpg" alt="Schematic of a three-element strain gauge rosette configuration"></div>
+        <figcaption>Strain gauge rosette configuration.</figcaption>
       </figure>
     </div>
   </div>

@@ -38,36 +38,85 @@
   <!-- ===================== NUCLEAR PROPULSION ===================== -->
   <div class="project-section">
     <div class="project-section-header">
-      <span class="tag">Group Research Project</span>
+      <span class="tag">Group Research Project · Course of Introduction to Nuclear Engineering · Team of 11</span>
       <h2>State of the Art on Nuclear Space Applications and Fuels in Nuclear Propulsion</h2>
+      <a class="project-download" href="../Documents/ProjectsReport/State%20of%20Art%20on%20Nuclear%20Space%20Applications%20and%20Fuels%20in%20Nuclear%20Propulsion.pdf" target="_blank" rel="noopener">Download report (PDF)</a>
     </div>
 
-    <p>A literature review of nuclear thermal propulsion (NTP) and nuclear electric
-      propulsion (NEP) systems, focusing on fuel element design and materials. The review
-      covers fuel compositions including uranium oxide, carbides, and nitrides, diffusion
-      barrier coatings for high-temperature hydrogen environments, and reactor concepts
-      such as ESA's DRACO program.</p>
+    <p>A literature review of nuclear propulsion systems for space applications, covering
+      both the reactor architectures and the fuel materials that make them possible.
+      Nuclear propulsion has long been seen as a way to enable missions that chemical
+      propulsion cannot reach: for the same propellant mass, a nuclear fission source
+      carries roughly seven orders of magnitude more energy density than a chemical
+      propellant, which is why nuclear rocket programs in the US and USSR demonstrated
+      engines twice as efficient as the best chemical engines of the time, even though none
+      were ultimately flown.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/nuclear/ntp-engine-schematic.jpg" alt="Block diagram of a nuclear thermal propulsion engine showing propellant tank, turbopump, reactor, and nozzle">
-        <figcaption>Conceptual schematic of a nuclear thermal propulsion engine.
-          <span class="source-note">Source: literature review — see report bibliography.</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/nuclear/fuel-element-cross-section.jpg" alt="Cross-section of a nuclear fuel element with diffusion barrier coatings and hydrogen flow channels">
-        <figcaption>Fuel element cross-section with NbC/ZrC diffusion barriers and hydrogen coolant flow.
-          <span class="source-note">Source: literature review — see report bibliography.</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/nuclear/fuel-rod-hexagonal-section.jpg" alt="Hexagonal cross-section of a graphite fuel rod with coolant channels">
-        <figcaption>Hexagonal graphite-composite fuel rod section with coolant channels.
-          <span class="source-note">Source: literature review — see report bibliography.</span>
-        </figcaption>
-      </figure>
-    </div>
+    <p>The review first distinguishes the two main families of nuclear propulsion.
+      <strong>Nuclear Electric Propulsion (NEP)</strong> uses a reactor to generate
+      electricity, which then ionizes and accelerates a propellant (typically hydrogen,
+      lithium, or xenon) through an electric or magnetic field, producing low thrust at
+      very high efficiency. <strong>Nuclear Thermal Propulsion (NTP)</strong> instead
+      pumps liquid hydrogen directly through the reactor core, where it heats rapidly and
+      expands through a nozzle, producing an order of magnitude more thrust than NEP.
+      Today's best chemical engines reach a specific impulse of about 465 s; NTP can
+      reach roughly 900 s, nearly double, while also offering a high thrust-to-weight
+      ratio that would meaningfully reduce the number of launches needed for a crewed
+      Mars mission and shorten transit time, in turn reducing crew exposure to radiation
+      and microgravity.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/nuclear/ntp-engine-schematic.jpg" alt="Block diagram of a nuclear thermal propulsion engine showing propellant tank, turbopump, reactor, and nozzle"></div>
+      <figcaption>Conceptual schematic of an NTP engine: propellant tank, turbopump, cooled reactor, and cooled nozzle.
+        <span class="source-note">Source: literature review — see report bibliography.</span>
+      </figcaption>
+    </figure>
+
+    <p>The most mature NTP architecture is the <strong>solid core reactor</strong>, as
+      used in NASA's NERVA program: hexagonal fuel elements are packed together to form
+      the reactor core, with hydrogen flowing through channels in each element to cool
+      the reactor while being heated for thrust. A solid core reactor of this type
+      typically reaches a specific impulse around 800 s at a thrust-to-weight ratio of
+      3–12, roughly twice the specific impulse of the best chemical engines.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/nuclear/fuel-rod-hexagonal-section.jpg" alt="Hexagonal cross-section of a graphite fuel rod with coolant channels"></div>
+      <figcaption>Hexagonal graphite-composite fuel rod section with coolant channels.
+        <span class="source-note">Source: literature review — see report bibliography.</span>
+      </figcaption>
+    </figure>
+
+    <p>Hydrogen is the propellant of choice for NTP because its low molecular weight
+      maximizes exhaust velocity for a given chamber temperature, and it doubles as an
+      effective neutron moderator. That same property, however, is the source of the
+      programme's hardest materials problem: at the high temperatures needed for good
+      performance, hydrogen reacts with graphite fuel elements to form hydrocarbons,
+      progressively corroding the fuel rods. The literature solution reviewed here layers
+      a niobium carbide (or zirconium carbide) diffusion barrier over the fuel element,
+      topped with a molybdenum overlayer: the NbC layer blocks carbon diffusion from the
+      graphite substrate, while the ductile molybdenum layer seals any cracks that form
+      during deposition and slows hydrogen diffusion further still.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/nuclear/fuel-element-cross-section.jpg" alt="Cross-section of a nuclear fuel element with diffusion barrier coatings and hydrogen flow channels"></div>
+      <figcaption>Fuel element cross-section with NbC/ZrC diffusion barriers and hydrogen coolant flow.
+        <span class="source-note">Source: literature review — see report bibliography.</span>
+      </figcaption>
+    </figure>
+
+    <p>The review also covers the fuel production routes that make these elements
+      possible — converting UF<sub>6</sub> to ceramic-grade UO<sub>2</sub> powder, then
+      carburizing or nitriding it into uranium carbide or uranium nitride fuel forms with
+      the thermal conductivity and high-temperature stability NTP requires — alongside the
+      environmental safeguards mandated for any space reactor, from remaining subcritical
+      in the event of a launch accident to the disposal strategy for a spent reactor at
+      end of life.</p>
+
+    <p>Finally, the review looks at where the field stands today: NASA and DARPA's
+      <strong>DRACO</strong> program aims to demonstrate a nuclear thermal rocket in orbit,
+      targeting a flight demonstration in the late 2020s, while ESA has launched parallel
+      feasibility studies (RocketRoll for NEP, ALUMNI for NTP) to identify the technologies
+      Europe would need to mature to develop nuclear propulsion domestically.</p>
   </div>
 </main>
 

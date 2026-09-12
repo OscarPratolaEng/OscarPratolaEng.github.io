@@ -41,48 +41,44 @@
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Space Propulsion · "The Fellowship Of The O-Ring"</span>
       <h2>Preliminary Design of a Bipropellant Semi-Cryogenic Blowdown Liquid Rocket Engine</h2>
+      <a class="project-download" href="../Documents/ProjectsReport/Preliminary%20Design%20of%20a%20Semi-Cryogenic%20Liquid%20Motor.pdf" target="_blank" rel="noopener">Download report (PDF)</a>
     </div>
 
     <p>A 1000 N LOX/RP-1 liquid rocket engine using a gas-pressurized blowdown
-      architecture, in which propellant delivery pressure decays over the burn. The study
-      focused on quantifying the resulting performance degradation, sizing a regenerative
-      cooling jacket, and evaluating the impact of additive manufacturing surface
-      roughness on discharge coefficients.</p>
+      architecture, in which propellant delivery pressure decays over the burn. The
+      propellant tanks and feed line, shown below, deliver both propellants to the
+      combustion chamber through a series of valves and filters.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/semi-cryo/tank-assembly-render.jpg" alt="3D CAD render of the LOX and RP-1 propellant tank assembly">
-        <figcaption>3D model of the blowdown propellant tank assembly.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/semi-cryo/propellant-feed-schematic.jpg" alt="Dimensioned technical schematic of the LOX and RP-1 tanks and feed line components">
-        <figcaption>Propellant feed system schematic.
-          <span class="source-note">A: Positive Shut-Off Valve · B: Filter · C: Latch Valve · D: Ball Valve for Cryogenic Applications · E: Filter · F: Combustion Chamber · G: Convergent Duct · H: Divergent Nozzle</span>
-        </figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/semi-cryo/tank-assembly-render.jpg" alt="3D CAD render of the LOX and RP-1 propellant tank assembly"></div>
+      <figcaption>3D model of the blowdown propellant tank assembly.</figcaption>
+    </figure>
 
-    <p>Continuous non-linear transient fluid-dynamic sizing (MATLAB) modeled how thrust
-      and specific impulse degrade over the burn as tank pressure drops, benchmarked
-      against nominal and experimental feature bounds.</p>
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/semi-cryo/propellant-feed-schematic.jpg" alt="Dimensioned technical schematic of the LOX and RP-1 tanks and feed line components"></div>
+      <figcaption>Propellant feed system schematic.</figcaption>
+    </figure>
+    <p class="legend-note">A: Positive Shut-Off Valve · B: Filter · C: Latch Valve · D: Ball Valve for Cryogenic Applications · E: Filter · F: Combustion Chamber · G: Convergent Duct · H: Divergent Nozzle</p>
 
-    <div class="image-gallery single-column">
-      <figure>
-        <img src="../images/projects/semi-cryo/mass-flow-degradation.jpg" alt="Graphs of RP-1 and LOX mass flow rate decaying over time during the blowdown burn">
-        <figcaption>Propellant mass flow rate decay over the blowdown burn, for both RP-1 and LOX.</figcaption>
-      </figure>
-    </div>
+    <p>The study focused on quantifying the performance degradation inherent to the
+      blowdown architecture: as tank pressure decays over the burn, propellant mass flow
+      rate falls with it. Continuous non-linear transient fluid-dynamic sizing (MATLAB)
+      modeled this decay for both propellants, benchmarked against nominal and
+      experimental feature bounds.</p>
 
-    <p>The additively manufactured thrust chamber introduces geometric uncertainty at the
-      injector level; cylindricity measurements on printed hole and pin components were
+    <figure class="figure-inline wide">
+      <div class="frame"><img src="../images/projects/semi-cryo/mass-flow-degradation.jpg" alt="Graphs of RP-1 and LOX mass flow rate decaying over time during the blowdown burn"></div>
+      <figcaption>Propellant mass flow rate decay over the blowdown burn, for both RP-1 and LOX.</figcaption>
+    </figure>
+
+    <p>The additively manufactured thrust chamber also introduces geometric uncertainty at
+      the injector level; cylindricity measurements on printed hole and pin components were
       compared against predicted and observed tolerances.</p>
 
-    <div class="image-gallery single-column">
-      <figure>
-        <img src="../images/projects/semi-cryo/am-tolerance-uncertainty.jpg" alt="Bar chart comparing predicted, observed, and experimental cylindricity for additively manufactured components">
-        <figcaption>Cylindricity uncertainty for additively manufactured injector components: prediction vs. observation vs. experimental data.</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/semi-cryo/am-tolerance-uncertainty.jpg" alt="Bar chart comparing predicted, observed, and experimental cylindricity for additively manufactured components"></div>
+      <figcaption>Cylindricity uncertainty for additively manufactured injector components: prediction vs. observation vs. experimental data.</figcaption>
+    </figure>
   </div>
 
   <hr class="entry-divider">
@@ -92,40 +88,44 @@
     <div class="project-section-header">
       <span class="tag">B.Sc. Thesis · Supervised by Prof. C. Paravan</span>
       <h2>A-10 Thunderbolt II Propulsion Analysis</h2>
+      <a class="project-download" href="../Documents/ProjectsReport/Analysis%20of%20the%20Propulsion%20System%20of%20the%20A-10%20Thunderbolt%20II.pdf" target="_blank" rel="noopener">Download report (PDF)</a>
     </div>
 
     <p>A numerical modeling suite (MATLAB) simulating the baseline Joule-Brayton cycle of
-      the TF34-GE-100 high-bypass turbofan engine that powers the A-10 Thunderbolt II,
-      optimizing the compressor pressure ratio and validating velocity triangles against
-      aerodynamic stall boundaries.</p>
+      the TF34-GE-100 high-bypass turbofan engine that powers the A-10 Thunderbolt II
+      through its typical close air support mission profile.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/a10/tf34-engine-cutaway.jpg" alt="Cutaway technical diagram of the TF-34 turbofan engine showing fan, compressor, combustor, and turbine stages">
+    <div class="figure-pair">
+      <figure class="figure-inline">
+        <div class="frame"><img src="../images/projects/a10/tf34-engine-cutaway.jpg" alt="Cutaway technical diagram of the TF-34 turbofan engine showing fan, compressor, combustor, and turbine stages"></div>
         <figcaption>Cutaway diagram of the TF-34 engine.
           <span class="source-note">Source: engine manufacturer (General Electric).</span>
         </figcaption>
       </figure>
-      <figure>
-        <img src="../images/projects/a10/mission-profile.jpg" alt="Graph of the A-10 mission altitude profile over time, including a close air support attack phase">
+      <figure class="figure-inline">
+        <div class="frame"><img src="../images/projects/a10/mission-profile.jpg" alt="Graph of the A-10 mission altitude profile over time, including a close air support attack phase"></div>
         <figcaption>Typical mission profile, including the close air support attack phase.</figcaption>
       </figure>
     </div>
 
-    <p>Increasing the compressor pressure ratio from the baseline β<sub>c</sub> = 14 to an
-      optimized β<sub>c</sub> = 20.9 shifted the thermodynamic cycle to higher peak
-      temperatures and pressures, improving cycle efficiency.</p>
+    <p>The analysis optimized the compressor pressure ratio and validated velocity
+      triangles against aerodynamic stall boundaries. Increasing the compressor pressure
+      ratio from the baseline β<sub>c</sub> = 14 to an optimized β<sub>c</sub> = 20.9
+      shifted the thermodynamic cycle to higher peak temperatures and pressures,
+      improving cycle efficiency.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/a10/ts-diagram-cycle-comparison.jpg" alt="Temperature-entropy diagram comparing the baseline and modified turbofan thermodynamic cycles">
-        <figcaption>T-s diagram comparing the baseline (β<sub>c</sub>=14) and modified (β<sub>c</sub>=20.9) cycles.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/a10/thrust-tsfc-vs-bpr.jpg" alt="Graphs of thrust and thrust specific fuel consumption as a function of bypass ratio">
-        <figcaption>Thrust and TSFC as a function of bypass ratio (BPR), with the selected operating point (BPR ≈ 6.2) marked.</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/a10/ts-diagram-cycle-comparison.jpg" alt="Temperature-entropy diagram comparing the baseline and modified turbofan thermodynamic cycles"></div>
+      <figcaption>T-s diagram comparing the baseline (β<sub>c</sub>=14) and modified (β<sub>c</sub>=20.9) cycles.</figcaption>
+    </figure>
+
+    <p>The optimum bypass ratio (BPR ≈ 6.2) was chosen as the point where thrust specific
+      fuel consumption flattens out, balancing thrust against fuel economy.</p>
+
+    <figure class="figure-inline wide">
+      <div class="frame"><img src="../images/projects/a10/thrust-tsfc-vs-bpr.jpg" alt="Graphs of thrust and thrust specific fuel consumption as a function of bypass ratio"></div>
+      <figcaption>Thrust and TSFC as a function of bypass ratio (BPR), with the selected operating point marked.</figcaption>
+    </figure>
   </div>
 
   <hr class="entry-divider">
@@ -135,63 +135,75 @@
     <div class="project-section-header">
       <span class="tag">Course Project, MSc · Supervised by Prof. F. Maggi · Team of ~10, 6-month project</span>
       <h2>Preliminary Design of an Intercontinental Civil Vehicle for Rapid Payload Delivery</h2>
+      <a class="project-download" href="../Documents/ProjectsReport/Preliminary%20Design%20of%20an%20Intercontinental%20Ballistic%20Missile%20Aimed%20to%20Deliver%20a%20100%20kg%20Payload.pdf" target="_blank" rel="noopener">Download report (PDF)</a>
     </div>
 
     <p>Conceptual scaling and trajectory optimization of a sub-orbital solid rocket motor
       launcher (Orion 50XL / STAR 37FM / STAR 30BP configuration) designed to deliver a
-      100 kg cargo payload across intercontinental range, using Modified Newtonian Flow
-      Theory and ANSYS Fluent CFD to characterize supersonic and hypersonic aerodynamics
-      through max-q.</p>
+      100 kg cargo payload across intercontinental range.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/icbm/concept-render.jpg" alt="3D CAD render of the three-stage launch vehicle concept">
-        <figcaption>3D concept render of the three-stage launch vehicle.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/icbm/qfd-requirements-analysis.jpg" alt="House of Quality QFD diagram comparing the design against competitor systems">
-        <figcaption>House of Quality (QFD) analysis, benchmarking design requirements against existing systems.</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/icbm/concept-render.jpg" alt="3D CAD render of the three-stage launch vehicle concept"></div>
+      <figcaption>3D concept render of the three-stage launch vehicle.</figcaption>
+    </figure>
 
-    <p>Hypersonic aerodynamic characterization used a CFD mesh of the full vehicle to map
-      surface force distributions, including local effects on the nose cone at Mach 20,
-      alongside a center-of-pressure / center-of-gravity stability analysis across the
-      flight envelope.</p>
+    <p>Requirements were structured with a House of Quality (QFD) analysis, benchmarking
+      the design against existing systems on acceleration, payload capacity, range
+      flexibility, and other competing criteria — reflecting the systems-engineering side
+      of a six-month, ten-person project.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/icbm/aero-forces-mesh.jpg" alt="CFD mesh of the full launch vehicle with aerodynamic force vectors overlaid">
-        <figcaption>CFD mesh of the full vehicle with aerodynamic force vectors.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/icbm/nosecone-forces-mach20.jpg" alt="Local force distribution on the nose cone at Mach 20 and 20 km altitude">
-        <figcaption>Local aerodynamic force distribution on the nose cone (Mach 20, 20 km altitude).</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/icbm/cp-cg-stability-diagram.jpg" alt="Diagram tracking center of pressure and center of gravity position along the vehicle across stages">
+    <figure class="figure-inline wide">
+      <div class="frame"><img src="../images/projects/icbm/qfd-requirements-analysis.jpg" alt="House of Quality QFD diagram comparing the design against competitor systems"></div>
+      <figcaption>House of Quality (QFD) analysis, benchmarking design requirements against existing systems.</figcaption>
+    </figure>
+
+    <p>Hypersonic aerodynamic characterization used Modified Newtonian Flow Theory and
+      ANSYS Fluent CFD on a mesh of the full vehicle to map surface force distributions
+      through max-q and beyond.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/icbm/aero-forces-mesh.jpg" alt="CFD mesh of the full launch vehicle with aerodynamic force vectors overlaid"></div>
+      <figcaption>CFD mesh of the full vehicle with aerodynamic force vectors.</figcaption>
+    </figure>
+
+    <p>Locally, the nose cone experiences the most extreme aerothermal environment,
+      reaching Mach 20 at 20 km altitude during ascent.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/icbm/nosecone-forces-mach20.jpg" alt="Local force distribution on the nose cone at Mach 20 and 20 km altitude"></div>
+      <figcaption>Local aerodynamic force distribution on the nose cone (Mach 20, 20 km altitude).</figcaption>
+    </figure>
+
+    <p>Static stability was verified by tracking the center of pressure against the
+      center of gravity as propellant burns off and stages separate, while drag
+      coefficient was broken down by stage across the Mach range.</p>
+
+    <div class="figure-pair">
+      <figure class="figure-inline">
+        <div class="frame"><img src="../images/projects/icbm/cp-cg-stability-diagram.jpg" alt="Diagram tracking center of pressure and center of gravity position along the vehicle across stages"></div>
         <figcaption>Center-of-pressure / center-of-gravity margin across vehicle stages.</figcaption>
       </figure>
-      <figure>
-        <img src="../images/projects/icbm/drag-coefficient-vs-mach.jpg" alt="Graphs of total and per-stage drag coefficient as a function of Mach number">
-        <figcaption>Drag coefficient vs. Mach number, broken down by stage.</figcaption>
+      <figure class="figure-inline">
+        <div class="frame"><img src="../images/projects/icbm/drag-coefficient-vs-mach.jpg" alt="Graphs of total and per-stage drag coefficient as a function of Mach number"></div>
+        <figcaption>Drag coefficient vs. Mach number, by stage.</figcaption>
       </figure>
     </div>
 
     <p>The resulting trajectory reaches an apogee near 1,900 km over a ~9,000 km downrange
-      distance, with dynamic pressure and re-entry heat flux constraints shaping the
-      first-stage burn and payload capsule design.</p>
+      distance.</p>
 
-    <div class="image-gallery">
-      <figure>
-        <img src="../images/projects/icbm/trajectory-profile.jpg" alt="Full flight trajectory graphs showing altitude versus downrange distance, with zoomed views of the powered and first-stage phases">
-        <figcaption>Full trajectory profile, with zoomed views of the powered and first-stage phases.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/projects/icbm/dynamic-pressure-profile.jpg" alt="Graph of dynamic pressure versus altitude during the powered flight phase">
-        <figcaption>Dynamic pressure vs. altitude during the powered phase, with first-stage burnout marked.</figcaption>
-      </figure>
-    </div>
+    <figure class="figure-inline wide">
+      <div class="frame"><img src="../images/projects/icbm/trajectory-profile.jpg" alt="Full flight trajectory graphs showing altitude versus downrange distance, with zoomed views of the powered and first-stage phases"></div>
+      <figcaption>Full trajectory profile, with zoomed views of the powered and first-stage phases.</figcaption>
+    </figure>
+
+    <p>Dynamic pressure and re-entry heat flux constraints, peaking early in the powered
+      phase, shaped the first-stage burn profile and payload capsule design.</p>
+
+    <figure class="figure-inline">
+      <div class="frame"><img src="../images/projects/icbm/dynamic-pressure-profile.jpg" alt="Graph of dynamic pressure versus altitude during the powered flight phase"></div>
+      <figcaption>Dynamic pressure vs. altitude during the powered phase, with first-stage burnout marked.</figcaption>
+    </figure>
   </div>
 </main>
 
