@@ -1,0 +1,340 @@
+:root {
+  --ink: #1c1b19;
+  --paper: #fdfcfa;
+  --accent: #fe9920;
+  --accent-deep: #c97412;
+  --steel: #6b6660;
+  --rule: #e4ded4;
+  --rule-strong: #d3cabb;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: "Spectral", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.25;
+  margin: 0;
+}
+
+a {
+  color: var(--accent-deep);
+  text-decoration-color: var(--rule-strong);
+  text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* --- Top navigation --- */
+
+.topbar {
+  border-bottom: 1px solid var(--rule);
+}
+
+.topbar-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 22px 28px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-family: "Spectral", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  color: var(--accent-deep);
+}
+
+nav.primary-nav {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+nav.primary-nav a {
+  color: var(--steel);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+nav.primary-nav a:hover,
+nav.primary-nav a:focus-visible {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+nav.primary-nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+/* --- Page shell --- */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 56px 28px 96px;
+}
+
+.eyebrow {
+  color: var(--steel);
+  font-size: 0.9rem;
+}
+
+.rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 40px 0;
+}
+
+/* --- Home hero --- */
+
+.hero h1 {
+  font-size: 2.6rem;
+}
+
+.hero .role {
+  margin-top: 10px;
+  font-size: 1.15rem;
+  color: var(--steel);
+}
+
+.hero .role strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.intro {
+  margin-top: 28px;
+  font-size: 1.05rem;
+}
+
+.intro .accent-mark {
+  color: var(--accent-deep);
+}
+
+.credentials {
+  margin-top: 32px;
+  display: grid;
+  gap: 14px;
+}
+
+.credential-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 18px;
+  font-size: 0.96rem;
+  align-items: baseline;
+}
+
+.credential-row dt {
+  color: var(--steel);
+}
+
+.credential-row dd {
+  margin: 0;
+}
+
+.cta-row {
+  margin-top: 36px;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.cta-row a {
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: 2px;
+}
+
+.cta-row a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* --- Section headers used on interior pages --- */
+
+.page-header h1 {
+  font-size: 2.1rem;
+}
+
+.page-header p {
+  margin-top: 14px;
+  color: var(--steel);
+  font-size: 1.02rem;
+}
+
+/* --- Entry list: publications / projects --- */
+
+.entry-list {
+  display: grid;
+  gap: 36px;
+}
+
+.entry {
+  display: grid;
+  gap: 6px;
+}
+
+.entry-meta {
+  font-size: 0.88rem;
+  color: var(--steel);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.entry-meta .venue {
+  color: var(--accent-deep);
+}
+
+.entry h2 {
+  font-size: 1.25rem;
+}
+
+.entry h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.entry h2 a:hover {
+  color: var(--accent-deep);
+}
+
+.entry p {
+  margin: 4px 0 0;
+  color: var(--ink);
+}
+
+.entry-divider {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 0;
+}
+
+/* --- Project cards (kept plain, no card-kit styling) --- */
+
+.project {
+  display: grid;
+  gap: 10px;
+}
+
+.project h2 {
+  font-size: 1.35rem;
+}
+
+.project .tag {
+  font-size: 0.85rem;
+  color: var(--steel);
+}
+
+.project ul {
+  margin: 6px 0 0;
+  padding-left: 20px;
+}
+
+.project li {
+  margin-bottom: 4px;
+}
+
+/* --- Contact page --- */
+
+.contact-list {
+  display: grid;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 18px;
+  align-items: baseline;
+  font-size: 1.02rem;
+}
+
+.contact-row dt {
+  color: var(--steel);
+  font-size: 0.92rem;
+}
+
+.contact-row dd {
+  margin: 0;
+}
+
+/* --- Footer --- */
+
+footer {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 28px 48px;
+  color: var(--steel);
+  font-size: 0.85rem;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 560px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+  .credential-row,
+  .contact-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  main {
+    padding: 40px 20px 72px;
+  }
+  .topbar-inner {
+    padding: 18px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
