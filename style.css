@@ -338,3 +338,38 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.hero-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 560px) {
+  .hero-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
