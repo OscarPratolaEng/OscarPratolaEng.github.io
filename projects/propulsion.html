@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propulsion Projects | Oscar Pratola</title>
+<meta name="description" content="Propulsion course projects by Oscar Pratola: liquid rocket engine design, turbofan analysis, and launch vehicle preliminary design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">Oscar Pratola</a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../Documents/Oscar_Pratola_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <a class="back-link" href="../projects.html">← Back to Projects</a>
+
+  <div class="page-header">
+    <h1>Propulsion Projects</h1>
+    <p>Preliminary design and analysis projects spanning liquid rocket engines,
+      airbreathing propulsion, and launch vehicle aerodynamics.</p>
+  </div>
+
+  <hr class="rule">
+
+  <!-- ===================== SEMI-CRYOGENIC ENGINE ===================== -->
+  <div class="project-section">
+    <div class="project-section-header">
+      <span class="tag">Course Project, MSc · Space Propulsion · "The Fellowship Of The O-Ring"</span>
+      <h2>Preliminary Design of a Bipropellant Semi-Cryogenic Blowdown Liquid Rocket Engine</h2>
+    </div>
+
+    <p>A 1000 N LOX/RP-1 liquid rocket engine using a gas-pressurized blowdown
+      architecture, in which propellant delivery pressure decays over the burn. The study
+      focused on quantifying the resulting performance degradation, sizing a regenerative
+      cooling jacket, and evaluating the impact of additive manufacturing surface
+      roughness on discharge coefficients.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/semi-cryo/tank-assembly-render.jpg" alt="3D CAD render of the LOX and RP-1 propellant tank assembly">
+        <figcaption>3D model of the blowdown propellant tank assembly.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/semi-cryo/propellant-feed-schematic.jpg" alt="Dimensioned technical schematic of the LOX and RP-1 tanks and feed line components">
+        <figcaption>Propellant feed system schematic.
+          <span class="source-note">A: Positive Shut-Off Valve · B: Filter · C: Latch Valve · D: Ball Valve for Cryogenic Applications · E: Filter · F: Combustion Chamber · G: Convergent Duct · H: Divergent Nozzle</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p>Continuous non-linear transient fluid-dynamic sizing (MATLAB) modeled how thrust
+      and specific impulse degrade over the burn as tank pressure drops, benchmarked
+      against nominal and experimental feature bounds.</p>
+
+    <div class="image-gallery single-column">
+      <figure>
+        <img src="../images/projects/semi-cryo/mass-flow-degradation.jpg" alt="Graphs of RP-1 and LOX mass flow rate decaying over time during the blowdown burn">
+        <figcaption>Propellant mass flow rate decay over the blowdown burn, for both RP-1 and LOX.</figcaption>
+      </figure>
+    </div>
+
+    <p>The additively manufactured thrust chamber introduces geometric uncertainty at the
+      injector level; cylindricity measurements on printed hole and pin components were
+      compared against predicted and observed tolerances.</p>
+
+    <div class="image-gallery single-column">
+      <figure>
+        <img src="../images/projects/semi-cryo/am-tolerance-uncertainty.jpg" alt="Bar chart comparing predicted, observed, and experimental cylindricity for additively manufactured components">
+        <figcaption>Cylindricity uncertainty for additively manufactured injector components: prediction vs. observation vs. experimental data.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <hr class="entry-divider">
+
+  <!-- ===================== A-10 THUNDERBOLT ===================== -->
+  <div class="project-section">
+    <div class="project-section-header">
+      <span class="tag">B.Sc. Thesis · Supervised by Prof. C. Paravan</span>
+      <h2>A-10 Thunderbolt II Propulsion Analysis</h2>
+    </div>
+
+    <p>A numerical modeling suite (MATLAB) simulating the baseline Joule-Brayton cycle of
+      the TF34-GE-100 high-bypass turbofan engine that powers the A-10 Thunderbolt II,
+      optimizing the compressor pressure ratio and validating velocity triangles against
+      aerodynamic stall boundaries.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/a10/tf34-engine-cutaway.jpg" alt="Cutaway technical diagram of the TF-34 turbofan engine showing fan, compressor, combustor, and turbine stages">
+        <figcaption>Cutaway diagram of the TF-34 engine.
+          <span class="source-note">Source: engine manufacturer (General Electric).</span>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/a10/mission-profile.jpg" alt="Graph of the A-10 mission altitude profile over time, including a close air support attack phase">
+        <figcaption>Typical mission profile, including the close air support attack phase.</figcaption>
+      </figure>
+    </div>
+
+    <p>Increasing the compressor pressure ratio from the baseline β<sub>c</sub> = 14 to an
+      optimized β<sub>c</sub> = 20.9 shifted the thermodynamic cycle to higher peak
+      temperatures and pressures, improving cycle efficiency.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/a10/ts-diagram-cycle-comparison.jpg" alt="Temperature-entropy diagram comparing the baseline and modified turbofan thermodynamic cycles">
+        <figcaption>T-s diagram comparing the baseline (β<sub>c</sub>=14) and modified (β<sub>c</sub>=20.9) cycles.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/a10/thrust-tsfc-vs-bpr.jpg" alt="Graphs of thrust and thrust specific fuel consumption as a function of bypass ratio">
+        <figcaption>Thrust and TSFC as a function of bypass ratio (BPR), with the selected operating point (BPR ≈ 6.2) marked.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <hr class="entry-divider">
+
+  <!-- ===================== ICBM / INTERCONTINENTAL VEHICLE ===================== -->
+  <div class="project-section">
+    <div class="project-section-header">
+      <span class="tag">Course Project, MSc · Supervised by Prof. F. Maggi · Team of ~10, 6-month project</span>
+      <h2>Preliminary Design of an Intercontinental Civil Vehicle for Rapid Payload Delivery</h2>
+    </div>
+
+    <p>Conceptual scaling and trajectory optimization of a sub-orbital solid rocket motor
+      launcher (Orion 50XL / STAR 37FM / STAR 30BP configuration) designed to deliver a
+      100 kg cargo payload across intercontinental range, using Modified Newtonian Flow
+      Theory and ANSYS Fluent CFD to characterize supersonic and hypersonic aerodynamics
+      through max-q.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/icbm/concept-render.jpg" alt="3D CAD render of the three-stage launch vehicle concept">
+        <figcaption>3D concept render of the three-stage launch vehicle.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/icbm/qfd-requirements-analysis.jpg" alt="House of Quality QFD diagram comparing the design against competitor systems">
+        <figcaption>House of Quality (QFD) analysis, benchmarking design requirements against existing systems.</figcaption>
+      </figure>
+    </div>
+
+    <p>Hypersonic aerodynamic characterization used a CFD mesh of the full vehicle to map
+      surface force distributions, including local effects on the nose cone at Mach 20,
+      alongside a center-of-pressure / center-of-gravity stability analysis across the
+      flight envelope.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/icbm/aero-forces-mesh.jpg" alt="CFD mesh of the full launch vehicle with aerodynamic force vectors overlaid">
+        <figcaption>CFD mesh of the full vehicle with aerodynamic force vectors.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/icbm/nosecone-forces-mach20.jpg" alt="Local force distribution on the nose cone at Mach 20 and 20 km altitude">
+        <figcaption>Local aerodynamic force distribution on the nose cone (Mach 20, 20 km altitude).</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/icbm/cp-cg-stability-diagram.jpg" alt="Diagram tracking center of pressure and center of gravity position along the vehicle across stages">
+        <figcaption>Center-of-pressure / center-of-gravity margin across vehicle stages.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/icbm/drag-coefficient-vs-mach.jpg" alt="Graphs of total and per-stage drag coefficient as a function of Mach number">
+        <figcaption>Drag coefficient vs. Mach number, broken down by stage.</figcaption>
+      </figure>
+    </div>
+
+    <p>The resulting trajectory reaches an apogee near 1,900 km over a ~9,000 km downrange
+      distance, with dynamic pressure and re-entry heat flux constraints shaping the
+      first-stage burn and payload capsule design.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/icbm/trajectory-profile.jpg" alt="Full flight trajectory graphs showing altitude versus downrange distance, with zoomed views of the powered and first-stage phases">
+        <figcaption>Full trajectory profile, with zoomed views of the powered and first-stage phases.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/icbm/dynamic-pressure-profile.jpg" alt="Graph of dynamic pressure versus altitude during the powered flight phase">
+        <figcaption>Dynamic pressure vs. altitude during the powered phase, with first-stage burnout marked.</figcaption>
+      </figure>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Oscar Pratola.
+</footer>
+
+</body>
+</html>

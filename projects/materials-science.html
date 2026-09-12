@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Materials Science &amp; Additive Manufacturing | Oscar Pratola</title>
+<meta name="description" content="Course projects on topology optimization, additive manufacturing, and structural analysis by Oscar Pratola.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../index.html">Oscar Pratola</a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../Documents/Oscar_Pratola_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <a class="back-link" href="../projects.html">← Back to Projects</a>
+
+  <div class="page-header">
+    <h1>Materials Science &amp; Additive Manufacturing</h1>
+    <p>Course projects on topology optimization, additive manufacturing process design,
+      and structural/fatigue analysis, completed during the M.Sc. in Aeronautical Engineering.</p>
+  </div>
+
+  <hr class="rule">
+
+  <!-- ===================== VEGA BRACKET ===================== -->
+  <div class="project-section">
+    <div class="project-section-header">
+      <span class="tag">Course Project, MSc · Supervised by Dr. T. Ghidini (ESA Head of Materials &amp; Processes)</span>
+      <h2>Topology Optimization of a Vega Payload Adapter Bracket</h2>
+    </div>
+
+    <p>An ECSS-compliant structural redesign of a support bracket for the Vega launcher's
+      payload adapter, targeting a lightweight, additively manufacturable component while
+      meeting stiffness, frequency, and safety-factor requirements under a 15 g static
+      launch load and cross-axis vibration environment.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/vega-bracket/component-overview.jpg" alt="Overview of the original bracket component with electrical connector and ACU support interfaces labeled">
+        <figcaption>Overview of the original support bracket, showing the electrical connector and ACU support interfaces.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/vega-bracket/upper-stage-adapter.jpg" alt="CAD sketch of the Vega launcher upper stage adapter">
+        <figcaption>The Vega upper stage adapter assembly the bracket integrates into.</figcaption>
+      </figure>
+    </div>
+
+    <p>The optimization process moved through several iterations of mass and stiffness
+      maximization, followed by a design-for-additive-manufacturing phase evaluating
+      support structures (h-cell, rod, and tree configurations) and print orientation. The
+      rod-support configuration was selected for its lower mass and better deformation
+      performance.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/vega-bracket/residual-displacement.jpg" alt="Displacement map on the printed geometry showing residual stresses after printing">
+        <figcaption>Residual displacement field on the printed geometry before support removal.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/vega-bracket/vonmises-after-springback.jpg" alt="Von Mises stress map after support removal and springback">
+        <figcaption>Von Mises stresses after support removal and springback, on the compensated geometry.</figcaption>
+      </figure>
+    </div>
+
+    <p>A compensated geometry approach was used to counteract print-induced springback,
+      fully eliminating residual deformation while keeping peak stresses below the AlSi10Mg
+      yield threshold.</p>
+
+    <table class="results-table">
+      <tr><th>Metric</th><th>Original</th><th>Optimized</th></tr>
+      <tr><td>Mass</td><td>453 g</td><td>73.6 g (−83.6%)</td></tr>
+      <tr><td>Qualification Safety Factor</td><td>—</td><td>1.25</td></tr>
+      <tr><td>Support configuration</td><td>—</td><td>Rod supports, horizontal orientation</td></tr>
+    </table>
+  </div>
+
+  <hr class="entry-divider">
+
+  <!-- ===================== PEKK BRACKET ===================== -->
+  <div class="project-section">
+    <div class="project-section-header">
+      <span class="tag">Course Project, MSc · Supervised by Prof. P. Bettini</span>
+      <h2>Topology Optimization of an Aerospace Bracket in PEKK Antero 800NA</h2>
+    </div>
+
+    <p>Applying Design for Additive Manufacturing (DfAM) principles, this project
+      minimized structural deformation of a lightweight bracket under a 150 N distributed
+      load, 3D printed in PEKK Antero 800NA via FDM, and validated the simulation against
+      physical correlation testing.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/pekk-bracket/optimization-method.jpg" alt="Conceptual comparison between topology optimization and shape optimization methods">
+        <figcaption>The optimization method: topology optimization was chosen over shape optimization for this component.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/pekk-bracket/factor-of-safety-map.jpg" alt="Factor of safety map on the final Omega-shaped bracket geometry">
+        <figcaption>Factor of safety distribution on the final Ω-shaped design (minimum FoS 1.4).</figcaption>
+      </figure>
+    </div>
+
+    <p>An Ω-shaped geometry, printed horizontally to align fibers with the applied load
+      and reduce support material, was selected over a V-shaped alternative that proved
+      prone to excessive bending. Supports were removed post-print using a 22 g/L NaOH
+      solution.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/pekk-bracket/support-removal-sequence.jpg" alt="Sequence of printed PEKK parts from support removal to finished component">
+        <figcaption>Printed parts progressing from support removal to finished component.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/pekk-bracket/hydraulic-test-setup.jpg" alt="PEKK bracket mounted in a hydraulic wedge grip tensile testing machine">
+        <figcaption>Physical correlation test setup using hydraulic wedge grips.</figcaption>
+      </figure>
+    </div>
+
+    <img src="../images/projects/pekk-bracket/test-results-graph.jpg" alt="Graph of axial force versus vertical displacement from physical testing" style="max-width:480px; width:100%; border:1px solid var(--rule); display:block; margin: 24px 0;">
+    <p style="margin-top:8px; font-size:0.85rem; color:var(--steel);">Physical test results: yielding observed at approximately 150 N / 0.56 mm vertical displacement.</p>
+
+    <table class="results-table">
+      <tr><th>Model</th><th>Weight</th><th>Displacement</th><th>Printing time</th></tr>
+      <tr><td>Original</td><td>100% (14.18 g)</td><td>0.173 mm</td><td>17 min</td></tr>
+      <tr><td>Ω-shape (chosen)</td><td>36% (5.17 g)</td><td>0.291 mm</td><td>55 min</td></tr>
+    </table>
+  </div>
+
+  <hr class="entry-divider">
+
+  <!-- ===================== ROTOR MAST ===================== -->
+  <div class="project-section">
+    <div class="project-section-header">
+      <span class="tag">Course Project, MSc · Machine Design Assignment · Supervised by Prof. M. Giglio</span>
+      <h2>Static and Fatigue Analysis of a Helicopter Rotor Mast</h2>
+    </div>
+
+    <p>A complete analytical and numerical structural assessment of a helicopter main
+      rotor shaft, combining Von Mises and Guest-Tresca failure criteria with finite
+      element analysis (Abaqus, hexahedral mesh) to locate critical notch sections, and
+      validating the results against experimental strain gauge data.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/rotor-mast/fem-mesh-critical-section.jpg" alt="Finite element mesh of the rotor mast with the critical section highlighted">
+        <figcaption>FEM mesh of the rotor mast, with the most critical section identified.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/rotor-mast/fatigue-load-profile.jpg" alt="Graph of cyclic axial and torque loading over time used for fatigue evaluation">
+        <figcaption>Cyclic axial and torque load profile used for the fatigue assessment.</figcaption>
+      </figure>
+    </div>
+
+    <p>Experimental validation was performed using a strain gauge rosette on a hydraulic
+      axial/torsional test machine, cross-checking the analytical and FEM predictions
+      against measured strains at the critical section.</p>
+
+    <div class="image-gallery">
+      <figure>
+        <img src="../images/projects/rotor-mast/hydraulic-test-machine.jpg" alt="Hydraulic axial and torsional test machine used for experimental validation">
+        <figcaption>Hydraulic axial/torsional test machine used for experimental validation.</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/projects/rotor-mast/strain-gauge-rosette.jpg" alt="Schematic of a three-element strain gauge rosette configuration">
+        <figcaption>Strain gauge rosette configuration used in the experimental set-up.</figcaption>
+      </figure>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Oscar Pratola.
+</footer>
+
+</body>
+</html>
