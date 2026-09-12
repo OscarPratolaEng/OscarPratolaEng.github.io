@@ -597,7 +597,7 @@ main.with-toc {
 
 .project-layout {
   display: grid;
-  grid-template-columns: 190px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 48px;
   align-items: start;
 }
@@ -605,29 +605,36 @@ main.with-toc {
 .project-toc {
   position: sticky;
   top: 28px;
-}
-
-.project-toc-title {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--steel);
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .project-toc a {
-  display: block;
-  padding: 7px 0 7px 12px;
-  font-size: 0.88rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 0.92rem;
   line-height: 1.35;
-  color: var(--steel);
+  color: var(--ink);
   text-decoration: none;
-  border-left: 2px solid var(--rule);
 }
 
 .project-toc a:hover {
-  color: var(--ink);
-  border-left-color: var(--accent);
+  color: var(--accent-deep);
+}
+
+.project-toc .toc-icon {
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  color: var(--steel);
+}
+
+.project-toc a:hover .toc-icon {
+  color: var(--accent-deep);
 }
 
 .project-content {
@@ -641,12 +648,6 @@ main.with-toc {
   .project-toc {
     position: static;
     margin-bottom: 32px;
-    border: 1px solid var(--rule);
-    padding: 16px 18px;
-  }
-  .project-toc a {
-    border-left: none;
-    padding-left: 0;
   }
 }
 
