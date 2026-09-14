@@ -171,6 +171,11 @@ main {
   font-size: 1.15rem;
   color: var(--steel);
 }
+@media (min-width: 561px) {
+  .hero .role {
+    white-space: nowrap;
+  }
+}
 
 .hero .role strong {
   color: var(--ink);
