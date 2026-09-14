@@ -626,7 +626,8 @@ main.with-toc {
 
 .project-toc a {
   display: block;
-  padding: 6px 0;
+  padding: 6px 0 6px 14px;
+  border-left: 2px solid var(--rule);
   font-size: 0.92rem;
   line-height: 1.35;
   color: var(--ink);
@@ -635,6 +636,7 @@ main.with-toc {
 
 .project-toc a:hover {
   color: var(--accent-deep);
+  border-left-color: var(--accent);
 }
 
 .project-content {
@@ -654,4 +656,13 @@ main.with-toc {
 /* Stronger visual break between projects within the same category page */
 .project-content hr.entry-divider {
   border-top: 1px solid var(--rule-strong);
+}
+
+.accent-mark a {
+  color: inherit;
+  text-decoration-color: currentColor;
+}
+
+.accent-mark a:hover {
+  color: var(--accent);
 }
