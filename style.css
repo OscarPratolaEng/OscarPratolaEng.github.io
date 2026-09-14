@@ -666,3 +666,9 @@ main.with-toc {
 .accent-mark a:hover {
   color: var(--accent);
 }
+
+.cta-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
